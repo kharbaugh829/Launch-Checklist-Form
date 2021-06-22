@@ -6,24 +6,26 @@ window.addEventListener("load", function() {
       let copilotNameInput = document.querySelector("input[name=copilotName]");
       let fuelLevelInput = document.querySelector("input[name=fuelLevel]");
       let cargoMassInput = document.querySelector("input[name=cargoMass]");
+     
       // alert the current value found in the username input
       if (pilotNameInput.value === "" || copilotNameInput.value === "" || fuelLevelInput.value === "" || cargoMassInput.value === "")
          {
             alert("All fields are required!");
             event.preventDefault();
          };
-
-      if (pilotNameInput.value === number || copilotNameInput.value === number)
-         {
-            alert("Number entered when letters were expected for this field, please enter valid information.");
-            event.preventDefault();
-         }; 
          
-      if (fuelLevelInput.value === string || cargoMassInput.value === string)
+      if (isNaN(fuelLevelInput.value) || isNaN(cargoMassInput.value))
          {
-            alert("Letters entered when numbers were expected for this field, please enter valid information.");
+            alert("Input Invalid, Please enter Numeric Values Only.");
             event.preventDefault();
          } 
+      document.getElementById("pilotStatus").innerHTML =  `Pilot ${pilotNameInput} Ready`;
+      document.getElementById("copilotStatus").innerHTML = `Co-pilot ${copilotNameInput} Ready`;
+      
+      if(fuelLevelInput.value < 10000){
+         document.querySelector("#faultyItems");
+         changeVisibility
+      }
    });
 });
 
