@@ -50,6 +50,7 @@ window.addEventListener("load", function () {
          if (fuelLevelInput.value > 10000 && cargoMassInput.value < 10000) {
             launchStatus.style.color = "green";
             launchStatus.innerHTML = "Shuttle is ready for launch";
+            changeVisibility.style.visibility = "hidden";
          }
       });
    });
