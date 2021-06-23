@@ -47,7 +47,7 @@ window.addEventListener("load", function () {
             launchStatus.innerHTML = "Shuttle not ready for launch";
          }
 
-         if (fuelLevelInput.value >= 10000 && cargoMassInput.value <= 10000){
+         if (fuelLevelInput.value >= 10000 && cargoMassInput.value <= 10000) {
             launchStatus.style.color = "green";
             launchStatus.innerHTML = "Shuttle is ready for launch";
          }
@@ -55,14 +55,6 @@ window.addEventListener("load", function () {
    });
 });
 
-/* This block of code shows how to format the HTML once you fetch some planetary JSON!
-<h2>Mission Destination</h2>
-<ol>
-   <li>Name: ${}</li>
-   <li>Diameter: ${}</li>
-   <li>Star: ${}</li>
-   <li>Distance from Earth: ${}</li>
-   <li>Number of Moons: ${}</li>
-</ol>
-<img src="${}">
-*/
+
+
+
