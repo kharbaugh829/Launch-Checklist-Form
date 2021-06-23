@@ -19,7 +19,7 @@ window.addEventListener("load", function () {
 
          };
           
-         if (isNaN(fuelLevelInput.value) || isNaN(cargoMassInput.value) || !isNaN(pilotNameInput.value) || !isNaN(copilotNameInput.value)) {
+         if (!isNaN(pilotNameInput.value) || !isNaN(copilotNameInput.value) || isNaN(fuelLevelInput.value) || isNaN(cargoMassInput.value)) {
             alert("Input Invalid");
 
          };
