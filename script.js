@@ -49,6 +49,7 @@ window.addEventListener("load", function () {
 
          if (fuelLevelInput.value > 10000 && cargoMassInput.value < 10000) {
             launchStatus.style.color = "green";
+            changeVisibility.style.visibility = "visible"
             launchStatus.innerHTML = "Shuttle is ready for launch";
             cargoStatus.innerHTML = "Cargo mass low enough for launch";
             fuelStatus.innerHTML = "Fuel level high enough for launch";
