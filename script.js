@@ -18,11 +18,11 @@ window.addEventListener("load", function () {
             alert("All fields are required!");
 
          };
+          
+         if (isNaN(fuelLevelInput.value) || isNaN(cargoMassInput.value) || !isNaN(pilotNameInput.value) || !isNaN(copilotNameInput.value)) {
+            alert("Input Invalid");
 
-         if (isNaN(fuelLevelInput.value) || isNaN(cargoMassInput.value)) {
-            alert("Input Invalid, Please enter Numeric Values Only.");
-
-         }
+         };
          const pilotStatus = document.getElementById("pilotStatus");
          const copilotStatus = document.getElementById("copilotStatus");
          const changeVisibility = document.getElementById("faultyItems");
